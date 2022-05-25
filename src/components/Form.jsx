@@ -1,4 +1,10 @@
 import {useState} from 'react';
+import firebase from 'firebase/app'
+import {storage} from 'firebase.js';
+import {ref, uploadBytesResumable} from 'firebase/storage'
+
+
+
 
 const Form = ({title, handleClick}) => {
     const [email, setEmail] = useState('');
